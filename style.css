@@ -229,6 +229,38 @@ body{
   margin-bottom:15px;
 }
 
+/* LATEST ACTIVITY */
+
+.activity-section{
+  max-width:1300px;
+  margin:auto;
+  padding:80px 30px;
+  display:grid;
+  grid-template-columns:1.1fr .9fr;
+  gap:40px;
+  align-items:center;
+}
+
+.activity-image img{
+  width:100%;
+  border-radius:24px;
+  border:1px solid rgba(77,184,255,.25);
+  box-shadow:
+    0 25px 60px rgba(0,0,0,.35),
+    0 0 25px rgba(0,140,255,.10);
+}
+
+.activity-content h2{
+  font-size:3rem;
+  margin:10px 0;
+}
+
+.activity-date{
+  color:#4db8ff;
+  font-weight:bold;
+  margin-bottom:20px;
+}
+
 /* PLEDGE */
 
 .pledge-wrap{
@@ -367,6 +399,10 @@ footer{
   }
 
     .photo-tiles{
+    grid-template-columns:1fr;
+  }
+
+    .activity-section{
     grid-template-columns:1fr;
   }
 }
